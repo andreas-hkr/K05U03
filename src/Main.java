@@ -6,6 +6,16 @@ public class Main {
         // Dag 4: 4 öre
         // ...
 
-        
+        double total = 0;
+        double salary = 0.01;
+        int days = 0;
+
+        while (total < 10_000_000) {
+            total += salary;
+            salary *= 2;
+            days++;
+        }
+
+        System.out.println("Det tog " + days + " dagar");
     }
 }
